@@ -21,3 +21,22 @@ brew install --cask visual-studio-code
 #---     - install Oh My Zsh - pretty bash customizer
 brew install --cask iterm2
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# Borrowed some of wookiee89's setup of iterm and o-m-z https://github.com/wookiee89/wookiee-macbook-setup
+#--- Install Powerline fonts
+cd ~
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
+
+#--- Install PowerLevel10k theme
+mkdir .powerlevel10k
+git clone https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
+echo "[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh" >>! ~/.zshrc
+
+### MANUAL STEP
+#   Install Cascadia Code PL ttf from: https://github.com/microsoft/cascadia-code/releases
+#   Link iTerm2 config:  iTerm2 > Preferences [General > Preferences] and select 'Load preferences from custom folder or URL'
+#   Quit and restart iTerm2 to reload shell env with new preferences

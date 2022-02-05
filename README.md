@@ -12,4 +12,4 @@ running `setup.sh` is intended to accomplish the following... at least on macOS 
 4. Install Python3.x (does not have :latest feature so version needs to be manually updated), set pyenv global version, and pyenv to .profile path
 5. Install Visual Studio Code Brew Cask
 6. Install iTerm2
-7. Install oh-my-zsh
+7. Install oh-my-zsh, Powerline fonts, and powerlevel10k theme
