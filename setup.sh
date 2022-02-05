@@ -32,9 +32,8 @@ cd ..
 rm -rf fonts
 
 #--- Install PowerLevel10k theme
-mkdir .powerlevel10k
-git clone https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
-echo "[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh" >>! ~/.zshrc
+brew install romkatv/powerlevel10k/powerlevel10k
+echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
 
 ### MANUAL STEP
 #   Install Cascadia Code PL ttf from: https://github.com/microsoft/cascadia-code/releases
