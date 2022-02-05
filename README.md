@@ -13,3 +13,6 @@ running `setup.sh` is intended to accomplish the following... at least on macOS 
 5. Install Visual Studio Code Brew Cask
 6. Install iTerm2
 7. Install oh-my-zsh, Powerline fonts, and powerlevel10k theme
+
+## How to Use?
+Run `./setup.sh' 
