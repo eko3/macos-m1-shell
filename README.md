@@ -1,6 +1,11 @@
-This is my personal MacOs devops set-up script.  It is far from complete, but it is at least started. -RB 2/5/22
+# macos devops env setup
+This is my personal macOS devops set-up script.  It is far from complete, but it is at least started. 
 
-This script does the following and was run on macOS Monterey v 12.1:
+RB 2/5/22
+
+## What does this do?
+
+running `setup.sh` is intended to accomplish the following... at least on macOS Monterey v 12.1
 1. Install Brew
 2. Install GitHub CLI Brew Cask and initializes auth (requires ssh-keygen depending on repos)
 3. Install pyenv Brew Cask to manage python
